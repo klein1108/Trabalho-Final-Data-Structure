@@ -4,17 +4,31 @@
 1735332697 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\geradorarquivos.c
 	"geradorArquivos.h"
 
-1735340397 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\geradorarquivos.h
+1735340941 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\geradorarquivos.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<string.h>
 	"constants.h"
 
-1735333725 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\constants.h
+1735399800 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\constants.h
 
 1735325543 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista.c
 
-1735340434 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\main.c
+1735399772 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\main.c
+	"data/geradorArquivos.h"
+
+1735325448 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\abp\abp.c
+
+1735325543 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.c
+
+1735399836 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.c
 	"geradorArquivos.h"
+
+1735399781 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"../constants.h"
 

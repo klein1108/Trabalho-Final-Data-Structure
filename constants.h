@@ -11,9 +11,12 @@
 #define ASCII_INICIO 33
 #define ASCII_FIM 126
 
+
+#define WRITE "w"
+
 typedef struct {
     int id;
-    char valor[MAX_CHAR_SENHA];
+    char dado[MAX_CHAR_SENHA];
 } Senha;
 
 #endif // CONSTANTS_H_INCLUDED

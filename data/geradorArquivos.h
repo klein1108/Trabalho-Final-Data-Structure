@@ -3,7 +3,7 @@
 #include <time.h>
 #include <string.h>
 
-#include "constants.h"
+#include "../constants.h"
 
 char selecionaCharAleatorio();
 Senha criaUmaSenhaAleatoriaPorId(int id);
