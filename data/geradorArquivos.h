@@ -7,4 +7,6 @@
 
 char selecionaCharAleatorio();
 Senha criaUmaSenhaAleatoriaPorId(int id);
-void criaArquivoComTotalDeSenhas(int total);
+void criaTotalDeSenhas(Senha senhas[], int total);
+void criaArquivoNomeadoOrdenadoComTotalDeSenhas(char nomeArquivo[], Senha senhas[], int total);
+void criaArquivoNomeadoDesordenadoComTotalDeSenhas(char nomeArquivo[], Senha senhas[], int total);
