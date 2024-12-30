@@ -31,19 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="ABP.c">
+		<Unit filename=".gitignore" />
+		<Unit filename="ABP/ABP.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="ABP.h" />
+		<Unit filename="ABP/ABP.h" />
+		<Unit filename="TrabalhoFinal.depend" />
+		<Unit filename="TrabalhoFinal.layout" />
 		<Unit filename="constants.h" />
-		<Unit filename="geradorArquivos.c">
+		<Unit filename="data/geradorArquivos.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="geradorArquivos.h" />
-		<Unit filename="lista.c">
+		<Unit filename="data/geradorArquivos.h" />
+		<Unit filename="lista/lista.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="lista.h" />
+		<Unit filename="lista/lista.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

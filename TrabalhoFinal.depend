@@ -15,20 +15,28 @@
 
 1735325543 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista.c
 
-1735422838 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\main.c
+1735598042 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\main.c
 	"data/geradorArquivos.h"
+	"lista/lista.h"
 
 1735325448 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\abp\abp.c
 
-1735325543 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.c
+1735597861 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.c
+	"lista.h"
 
-1735422769 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.c
+1735423082 source:f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.c
 	"geradorArquivos.h"
 
 1735421608 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
+	<string.h>
+	"../constants.h"
+
+1735597746 f:\ufrgs\aulas\semestre 2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.h
+	<stdio.h>
+	<stdlib.h>
 	<string.h>
 	"../constants.h"
 
