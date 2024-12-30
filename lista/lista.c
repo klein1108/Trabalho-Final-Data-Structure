@@ -6,28 +6,20 @@ ListaSenhaNodo* criaUmaListaDeSenhaVazia() {
 
 ListaSenhaNodo* insereSenhaNodoNaLista(ListaSenhaNodo* senhaAntes, Senha dadosSenha) {
 
-    printf("DADOS_SENHA.ID = %d  E DADOS_SENHA.DADO = \"%s\"\n\n", dadosSenha.id, dadosSenha.dado);
-    printf("SENHA_ANTES->DATA.ID = %d  E SENHA_ANTES->DATA.DADO = \"%s\"\n\n", senhaAntes->data.id, senhaAntes->data.dado);
-    ListaSenhaNodo *novaSenha = (ListaSenhaNodo*) malloc(sizeof(ListaSenhaNodo*));
+    ListaSenhaNodo *novaSenha = (ListaSenhaNodo*) malloc(sizeof(ListaSenhaNodo));
     novaSenha->data.id = dadosSenha.id;
     strcpy(novaSenha->data.dado, dadosSenha.dado);
     novaSenha->prox = NULL;
 
     ListaSenhaNodo *senhaAtual = senhaAntes;
 
-//    printf("SENHA ATUAL (id: %d) [senha:\"\%s\"] coletado com sucesso!\n", senhaAtual->data.id, senhaAtual->data.dado);
-//    printf("SENHA ANTES (id: %d) [senha:\"\%s\"] coletado com sucesso!\n\n", senhaAntes->data.id, senhaAntes->data.dado);
-
     if (senhaAtual == NULL) {
         return novaSenha;
     }
-    printf("AQUI 2!!!\n");
+
     while (senhaAtual->prox != NULL) {
         senhaAtual = senhaAtual->prox;
-        printf("WHILE\n");
     }
-    printf("AQUI 3!!!\n");
-
 
     senhaAtual->prox = novaSenha;
 
@@ -107,10 +99,7 @@ ListaSenhaNodo* getListaPopuladaPorNomeArquivo(char nomeArquivo[]){
             senhaColetada.id = idToInteger;
             strcpy(senhaColetada.dado, senhaArquivo);
 
-//            printf("SENHA.ID = %d E SENHA.DADO = \"%s\"\n", senhaColetada.id, senhaColetada.dado);
-
             if (idToInteger != 0) {
-                printf("AQUI\n");
                 listaSenhaNodo = insereSenhaNodoNaLista(listaSenhaNodo, senhaColetada);
                 printf("DADO (id: %d) [senha:\"\%s\"] coletado com sucesso!\n\n", senhaColetada.id, senhaColetada.dado);
             }
