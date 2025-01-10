@@ -63,7 +63,6 @@ void criaArquivoNomeadoDesordenadoComTotalDeSenhas(char nomeArquivo[], Senha sen
         for(int i = 0; i < total; i++) {
             //sorteia index entre 0 e faltantes
             indexRandom =  rand() % (faltantes + 1);
-            printf("INDEXRANDOM = %d\n", indexRandom);
 
             //escreve no arquivo
             fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhas[indexRandom].dado);
@@ -91,3 +90,83 @@ void criaArquivoNomeadoDesordenadoComTotalDeSenhas(char nomeArquivo[], Senha sen
     }
 
 }
+
+
+void criaArquivoBuscaSenha(char nomeArquivo[], Senha senhas[], int tamanhoLista){
+    FILE *file;
+
+    int indexRandom;
+
+    file = fopen(nomeArquivo, WRITE);
+
+    if(file == NULL) {
+        printf("Erro ao abrir arquivo: %s", nomeArquivo);
+    } else {
+        for(int i = 0; i < TOTAL_SENHAS_BUSCA; i++){
+            indexRandom = rand() % (tamanhoLista + 1);
+            fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhas[indexRandom].dado);
+        }
+
+        printf(" O Arquivo \"%s\" foi criado com sucesso!\n", nomeArquivo);
+        fclose(file);
+    }
+
+}
+
+
+void criaArquivoBuscaSenhaCinquentaPorcentoErradas(char nomeArquivo[], Senha senhas[], int tamanhoLista){
+    FILE *file;
+
+    char senhaIncorreta[MAX_CHAR_SENHA] = "errosenha";
+    int indexRandom;
+
+    file = fopen(nomeArquivo, WRITE);
+
+    if(file == NULL) {
+        printf("Erro ao abrir arquivo: %s", nomeArquivo);
+    } else {
+        for(int i = 1; i <= TOTAL_SENHAS_BUSCA; i++){
+            indexRandom = rand() % (tamanhoLista + 1);
+
+            if(i <= 5){
+                fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhas[indexRandom].dado);
+            } else {
+                fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhaIncorreta);
+            }
+
+        }
+
+        printf(" O Arquivo \"%s\" foi criado com sucesso!\n", nomeArquivo);
+        fclose(file);
+    }
+
+}
+
+void criaArquivoBuscaSenhaOitentaPorcentoErradas(char nomeArquivo[], Senha senhas[], int tamanhoLista){
+    FILE *file;
+
+    char senhaIncorreta[MAX_CHAR_SENHA] = "errosenha";
+    int indexRandom;
+
+    file = fopen(nomeArquivo, WRITE);
+
+    if(file == NULL) {
+        printf("Erro ao abrir arquivo: %s", nomeArquivo);
+    } else {
+        for(int i = 1; i <= TOTAL_SENHAS_BUSCA; i++){
+            indexRandom = rand() % (tamanhoLista + 1);
+
+            if(i <= 2){
+                fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhas[indexRandom].dado);
+            } else {
+                fprintf(file, "%d;%s\n", senhas[indexRandom].id, senhaIncorreta);
+            }
+
+        }
+
+        printf(" O Arquivo \"%s\" foi criado com sucesso!\n", nomeArquivo);
+        fclose(file);
+    }
+
+}
+

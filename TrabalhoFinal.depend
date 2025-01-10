@@ -40,3 +40,31 @@
 	<string.h>
 	"../constants.h"
 
+1735325448 source:f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\abp\abp.c
+
+1736529037 source:f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.c
+	"geradorArquivos.h"
+
+1736528884 f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\data\geradorarquivos.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"../constants.h"
+
+1736525297 f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\constants.h
+
+1736533275 source:f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\main.c
+	"data/geradorArquivos.h"
+	"lista/lista.h"
+
+1736533907 f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"../constants.h"
+
+1736533197 source:f:\ufrgs\aulas\semestre_2\estrutura de dados\area 3\trab final\trabalhofinal\lista\lista.c
+	"lista.h"
+

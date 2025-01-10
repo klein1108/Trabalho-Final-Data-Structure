@@ -10,24 +10,29 @@ int main(){
 
     criaTotalDeSenhas(senhas, total);
     criaArquivoNomeadoOrdenadoComTotalDeSenhas("SenhaArquivoOrdenado.txt", senhas, total);
-//    criaArquivoNomeadoDesordenadoComTotalDeSenhas("SenhaArquivoDesordenado.txt", senhas, total);
-
+    criaArquivoNomeadoOrdenadoComTotalDeSenhas("SenhaArquivoDesordenado.txt", senhas, total);
 
     ListaSenhaNodo *lista = criaUmaListaDeSenhaVazia();
-//    lista = insereSenhaNodoNaLista(lista, senhas[0]);
-//    lista = insereSenhaNodoNaLista(lista, senhas[1]);
-//    printf("LISTA NODO 1:\nID = %d\nSenha:\"%s\"\n\n", lista->data.id, lista->data.dado);
-//    printf("LISTA NODO PROX:\nID = %d\nSenha:\"%s\"\n\n", lista->prox->data.id, lista->prox->data.dado);
-//
-//    printf("\nENCONTRE SENHA DE ID = 2\n");
-//
-//    printf("SENHA: \"%s\"\n",
-//           encontraSenhaNodoNaListaPorId(lista, 2)->data.dado
-//    );
+    ListaSenhaNodo *listaBusca = criaUmaListaDeSenhaVazia();
+
     lista = getListaPopuladaPorNomeArquivo("SenhaArquivoOrdenado.txt");
 
 
+    criaArquivoBuscaSenha("buscaSenhasCorretas.txt", senhas, total);
+    criaArquivoBuscaSenhaCinquentaPorcentoErradas("buscaSenhas50PorcentoIncorretas.txt", senhas, total);
+    criaArquivoBuscaSenhaOitentaPorcentoErradas("buscaSenhas80PorcentoInorretas.txt", senhas, total);
+
+//    lista = encontraSenhaNodoNaListaPorId(lista, 55);
+
+//    listaBusca = getListaPopuladaPorNomeArquivo("buscaSenhas80PorcentoInorretas.txt");
+
+    analizaListaSenhas("buscaSenhasCorretas.txt", "AnalizaCorretos.txt", lista);
+    analizaListaSenhas("buscaSenhas50PorcentoIncorretas.txt", "Analiza50PorcentoIncorretos.txt", lista);
+    analizaListaSenhas("buscaSenhas80PorcentoInorretas.txt", "Analiza80PorcentoIncorretos.txt", lista);
+
+
     destroiListaDeSenha(lista);
+    destroiListaDeSenha(listaBusca);
     return 0;
 
 }

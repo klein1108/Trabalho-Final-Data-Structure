@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include"../constants.h"
 
@@ -20,6 +21,8 @@ ListaSenhaNodo* criaUmaListaDeSenhaVazia();
 ListaSenhaNodo* insereSenhaNodoNaLista(ListaSenhaNodo* primeiroNodo, Senha dadosSenha);
 ListaSenhaNodo* encontraSenhaNodoNaListaPorId(ListaSenhaNodo* lista, int id);
 ListaSenhaNodo* getListaPopuladaPorNomeArquivo(char nomeArquivo[]);
+
+void analizaListaSenhas(char dataFileName[], char resultsFileName[], ListaSenhaNodo* listaSenhas);
 
 void destroiListaDeSenha(ListaSenhaNodo *lista);
 

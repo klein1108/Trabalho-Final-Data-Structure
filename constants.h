@@ -12,6 +12,8 @@
 #define ASCII_FIM 126
 
 
+#define TOTAL_SENHAS_BUSCA 10
+
 #define WRITE "w"
 
 typedef struct {
