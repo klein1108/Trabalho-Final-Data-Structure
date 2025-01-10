@@ -194,7 +194,6 @@ void analizaListaSenhas(char dataFileName[], char resultsFileName[], ListaSenhaN
 
                 if (teste != NULL && (strcmp(teste->data.dado, senhaArquivo) == 0)) {
                     fprintf(fileDestiny, "%d - OK! [%.3f]\n", teste->data.id, teste->data.dado, time_ms_2);
-//                    fprintf(fileDestiny, "%d;%s;%.3f\n", id, strOk, time_ms_2);
                 }
                 else {
                     fprintf(fileDestiny, "%d - ERROR! [%.3f]\n", teste->data.id, teste->data.dado, time_ms_2);
